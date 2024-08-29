@@ -1,35 +1,29 @@
-header, nav > ul, .contact {
+.header, .nav_options, .contact {
     display: flex;
     align-items: center;
 }
 
-header {
-    box-sizing: border-box;
+.header {
     width: 100%;
     position: sticky;
-    top: 0;
-    justify-content: end;
-    background-color: var(--darkmode-primary);
+    box-sizing: border-box;
     padding: 3.06rem 0rem;
+    background-color: inherit;
+    justify-content: end;
 }
 
-nav > ul {
+.nav_options {
     margin-right: 3.18rem;
     font-size: 1.25rem;
     line-height: 1.3em;
     font-weight: medium;
-    color: var(--darkmoode-tertiary);
     gap: 2.7em;
 }
 
-nav > ul > li {
+.nav_options > li {
     cursor: pointer;
 }
 
 .contact {
     gap: 1.25rem
-}
-
-.contact_icon {
-    width: 1.87rem;
 }
