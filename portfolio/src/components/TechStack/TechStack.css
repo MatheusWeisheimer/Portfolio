@@ -1,0 +1,12 @@
+.tech_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -4rem;
+    margin-bottom: -3rem;
+}
+
+.tech_container > * {
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+}
