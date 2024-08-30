@@ -1,6 +1,6 @@
 import { DARKMODE_FILL, LIGHTMODE_FILL } from "../../utils/constants"
 
-function UncoloredIcon({name, darkMode, width}) {
+function UncoloredIcon({name, width, darkMode }) {
     const req = require(`./iconComponents/${name}.js`);
     const IconComponent = req.default
 
