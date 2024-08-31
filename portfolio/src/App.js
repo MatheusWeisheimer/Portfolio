@@ -1,10 +1,14 @@
+import './App.css';
+
 import { useState } from 'react';
 
-import './App.css';
+import Home from './components/Home/Home';
 import Header from './components/Header/Header'
+import TechStack from './components/TechStack/TechStack'
+import Projects from './components/Projects/Projects';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(false)
   const backgroundColor = darkMode ? "#191919" : "#ffffff"
 
   function switchDarkMode() {
@@ -16,6 +20,9 @@ function App() {
       <Header 
         darkMode={darkMode} switchDarkMode={switchDarkMode} 
       />
+      <Home darkMode={darkMode}/>
+      <TechStack darkMode={darkMode}/>
+      <Projects darkMode={darkMode}/>
     </div>
   );
 }
