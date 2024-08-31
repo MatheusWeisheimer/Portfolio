@@ -5,7 +5,7 @@ import UncoloredIcon from '../icons/UncoloredIcon'
 
 function ProjectCard({darkMode}) {
     return (
-        <div className='card_container'>
+        <div className={`card_container ${darkMode ? "darkmode_background" : "box_shadow"}`}>
             <div className='project_thumb'></div>
             <div className='card_content'>
                 <h3 className={`${darkMode ? "darkmode_heading" : "lightmode_heading"}`}>
