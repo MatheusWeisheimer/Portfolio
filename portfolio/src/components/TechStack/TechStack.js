@@ -23,6 +23,7 @@ function TechStack({darkMode}) {
                 <ColoredIcon name="ColoredC" width={ICON_WIDTH}/>
                 <ColoredIcon name="ColoredJava" width={ICON_WIDTH}/>
                 <ColoredIcon name="ColoredPython" width={ICON_WIDTH}/>
+                <ColoredIcon name="ColoredSqlite" width={ICON_WIDTH}/>
             </div>
         </section>
     )
