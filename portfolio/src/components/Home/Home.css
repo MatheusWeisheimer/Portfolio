@@ -1,0 +1,17 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home > h2 {
+    line-height: 1.5em;
+}
+
+.profile_picture {
+    width: 22rem;
+    height: 22rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
