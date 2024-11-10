@@ -1,8 +1,22 @@
 import './Projects.css'
+import projectsData from '../../utils/projectsData'
 
 import ProjectCard from "../ProjectCard/ProjectCard"
 
 function Projects({darkMode}) {
+    const projectEls = projectsData.map(project => (
+        <ProjectCard 
+            key={project.name} 
+            darkMode={darkMode}
+            image={project.image}
+            title={project.title}
+            desc={project.desc}
+            tecs={project.tecs}
+            livePreview={project.livePreview}
+            viewCode={project.viewCode}
+        />
+    ))
+
     return(
         <section name="projects">
             <div className="heading_content_container">
@@ -14,9 +28,7 @@ function Projects({darkMode}) {
                 </p>
             </div>
             <div className="projects">
-                <ProjectCard darkMode={darkMode}/>
-                <ProjectCard darkMode={darkMode}/>
-                <ProjectCard darkMode={darkMode}/>
+                {projectEls}
             </div>
         </section>
     )
