@@ -1,0 +1,27 @@
+.footer {
+    margin-top: 8em;
+}
+
+.footer_nav, .footer_contact {
+    display: flex;
+    align-items: center;
+}
+
+.footer_nav {
+    padding: 3em 0;
+    border-top: 2px solid;
+    font-size: 1.25rem;
+    line-height: 1.3em;
+    font-weight: medium;
+    gap: 2.7em;
+}
+
+.footer_nav > li {
+    cursor: pointer;
+}
+
+.footer_contact {
+    padding: 2em 0;
+    gap: 1.25rem;
+    justify-content: end;
+}

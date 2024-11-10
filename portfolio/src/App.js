@@ -2,10 +2,11 @@ import './App.css';
 
 import { useState } from 'react';
 
-import Home from './components/Home/Home';
+import Home from './components/Home/Home'
 import Header from './components/Header/Header'
 import TechStack from './components/TechStack/TechStack'
-import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/Projects'
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -23,6 +24,7 @@ function App() {
       <Home darkMode={darkMode}/>
       <TechStack darkMode={darkMode}/>
       <Projects darkMode={darkMode}/>
+      <Footer darkMode={darkMode}/>
     </div>
   );
 }
