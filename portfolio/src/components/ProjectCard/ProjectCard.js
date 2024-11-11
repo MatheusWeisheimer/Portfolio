@@ -11,7 +11,7 @@ function ProjectCard(props) {
         <ColoredIcon key={tec} name={`Colored${tec}`} width="1.5rem"/>
     ))
 
-    const imagePreview = require(`../../assets/images/${image}.jpg`);
+    const imagePreview = require(`../../assets/images/${image}`);
 
     return (
         <div className={`card_container ${darkMode ? "darkmode_background" : "box_shadow"}`}>
@@ -34,10 +34,13 @@ function ProjectCard(props) {
                             <a href={livePreview} target='blank'>Live Preview</a>
                         </div>
                     }
-                    <div className={`goto_inner_container ${darkMode ? "darkmode_heading" : "lightmode_heading"}`}>
-                        <UncoloredIcon name="UncoloredGithub" width="1.3rem" darkMode={darkMode}/>
-                        <a href={viewCode} target='blank'>View Code</a>
-                    </div>
+                    {
+                        viewCode &&
+                        <div className={`goto_inner_container ${darkMode ? "darkmode_heading" : "lightmode_heading"}`}>
+                            <UncoloredIcon name="UncoloredGithub" width="1.3rem" darkMode={darkMode}/>
+                            <a href={viewCode} target='blank'>View Code</a>
+                        </div>
+                    }
                 </div>
             </div>
             
